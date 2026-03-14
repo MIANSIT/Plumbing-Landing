@@ -12,15 +12,40 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background: #ffffff;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes slide-in{
+  from{transform: translateX(-100%); opacity:0;}
+  to{transform: translateX(0%); opacity:1;}
+}
+
+@keyframes drop-in{
+  from{transform:  translateY(200%); opacity:0;}
+  to{transform:  translateY(0%); opacity:1;}
+}
+
+.slide-in{
+  animation: slide-in 0.6s ease-out forwards;
+}
+
+.drop-inHeading,.drop-inButton{
+  animation: drop-in 1.3s ease-out forwards;
+}
+
+@keyframes slide-left{
+  from{
+    transform: translateX(0%);
+  }
+  to{transform: translateX(10%);} 
+}
+
+.slide-right{
+  display:flex;
+   gap: 30px;
+   width:max-content;
+  animation:slide-left 20s linear infinite;
 }
