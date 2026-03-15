@@ -1,6 +1,7 @@
 
 
 import Navbar from "./components/layouts/Navbar";
+import Gallery from "./components/sections/Gallery";
 import Hero from "./components/sections/Hero";
 import Services from "./components/sections/Services";
 import TrustSection from "./components/sections/TrustSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Services/>
       <WhyUs/>
       <TrustSection/>
+      <Gallery/>
       
     </main>
   );

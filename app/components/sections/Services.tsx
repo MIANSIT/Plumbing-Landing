@@ -11,7 +11,7 @@ export default function Services(){
         <div id="Services" className="flex flex-col py-10  bg-blue-50">
 
                 <div>
-                <h1 className="font-david py-5 lg:py-5 font-bold text-xl lg:text-3xl text-black  text-center">Services We Provide</h1>
+                <h1 className="font-david py-5 lg:py-5 font-bold text-2xl lg:text-4xl text-black  text-center">Services We Provide</h1>
             </div>
 
         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">

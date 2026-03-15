@@ -6,7 +6,7 @@ import {
   StarOutlined,
   InfoCircleOutlined,
   MailOutlined,
-  MenuOutlined,
+  MenuOutlined
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Dropdown, Button } from "antd";

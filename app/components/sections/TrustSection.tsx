@@ -9,7 +9,7 @@ export default function TrustSection(){
         <div  id="Reviews" className="flex flex-col items-center justify-center w-full overflow-hidden" >
 
             <div>
-                <h1 className="font-david py-5 lg:py-5 font-bold text-xl lg:text-3xl text-black  text-center">Our Customers</h1>
+                <h1 className="font-david py-5 lg:py-5 font-bold text-2xl lg:text-4xl text-black  text-center">Our Customers</h1>
             </div>
             <div className="w-full overflow-hidden">
                  <div className=" slide-right  flex flex-row justify-items-center gap-5 ">
