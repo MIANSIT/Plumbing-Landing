@@ -19,21 +19,28 @@ export default function Hero(){
                 
             </div>
 
-
-            <div  className="items-center justify-center" >
-                <div className="flex flex-row py-4 px-10 gap-3">
-                    <span className=" items-center rounded-md bg-blue-300 px-3 py-1 text-md font-serif">Licensed</span>
-                    <span className=" items-center rounded-md bg-blue-300 px-3 py-1 text-md font-serif">Insured</span>
-                    <span className=" items-center rounded-md bg-blue-300  px-3 py-1 text-md font-serif">20+ years</span>
-                </div>
-
-                <div className="flex flex-row py-4 px-10 gap-3">
-                    <span className="items-center rounded-md bg-blue-300 px-3 py-1 text-md font-serif">erving Fresno</span>
-                    <span className="items-center rounded-md bg-blue-300 px-3 py-1 text-md font-serif">CA</span>
-                    <span className=" items-center rounded-m bg-blue-300  px-3 py-1 text-md font-serif ">Badge</span>
-                </div>
-                <h1></h1>
-
+            <div className="flex flex-wrap items-center py-4 px-6 md:px-10 gap-3">
+               <span className="rounded-full bg-blue-300 px-4 py-2 text-sm md:text-base font-serif text-blue-900 shadow-sm">
+                 Licensed
+               </span>
+               <span className="rounded-full bg-blue-300 px-4 py-2 text-sm md:text-base font-serif text-blue-900 shadow-sm">
+                 Insured
+               </span>
+               <span className="rounded-full bg-blue-300 px-4 py-2 text-sm md:text-base font-serif text-blue-900 shadow-sm">
+                 20+ years
+               </span>
+            </div>
+            
+            <div className="flex flex-wrap items-center py-4 px-6 md:px-10 gap-3">
+               <span className="rounded-full bg-blue-300 px-4 py-2 text-sm md:text-base font-serif text-blue-900 shadow-sm">
+                 Serving Fresno
+               </span>
+               <span className="rounded-full bg-blue-300 px-4 py-2 text-sm md:text-base font-serif text-blue-900 shadow-sm">
+                 CA
+               </span>
+               <span className="rounded-full bg-blue-300 px-4 py-2 text-sm md:text-base font-serif text-blue-900 shadow-sm">
+                 Badge
+               </span>
             </div>
 
         </div>
