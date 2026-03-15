@@ -12,7 +12,7 @@ export default function Hero(){
                     <Button type="primary" 
                       size="large"
                       href="tel:01793229730"
-                      className="bg-orange-700! w-full h-15! text-4xl! text-white ">
+                      className="bg-orange-700!  w-[70%] md:w-full h-15!  text-3xl! md:text-4xl! text-white ">
                         01-0100-101
                     </Button>
                     

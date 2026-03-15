@@ -15,8 +15,8 @@ export default function GalleryUi({ before, after, name, review }: ReviewProps) 
       
      
       <div className="flex flex-col items-center ">
-        <h1 className="font-mono font-bold text-lg text-red-500">Before</h1>
-       <div className="group relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-[70px_20px_70px_20px] overflow-hidden">
+        <h1 className="font-mono font-bold  text-sm md:text-lg text-red-500">Before</h1>
+       <div className="group relative  w-48 h-48 md:w-60 md:h-60  lg:w-80 lg:h-80 rounded-[70px_20px_70px_20px] overflow-hidden">
          <Image
            src={before}
            alt="before pic"
@@ -28,9 +28,9 @@ export default function GalleryUi({ before, after, name, review }: ReviewProps) 
 
 
       <div className="flex flex-col items-center ">
-        <h1 className=" font-mono font-bold text-lg text-emerald-600">After</h1>
+        <h1 className=" font-mono font-bold text-sm md:text-lg text-emerald-600">After</h1>
       
-        <div className="group relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-[20px_70px_20px_70px] overflow-hidden">
+        <div className="group relative  h-48 w-48 md:w-60 md:h-60  lg:w-80 lg:h-80 rounded-[20px_70px_20px_70px] overflow-hidden">
           <Image
             src={after}
             alt="after pic"

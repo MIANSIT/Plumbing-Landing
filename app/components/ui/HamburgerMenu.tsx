@@ -27,25 +27,25 @@ const Hamburgermenu: React.FC = () => {
     {
       key: "services",
       icon: <BuildOutlined style={{fontSize:"20px"}}/>,
-      label: <span className="text-xl font-david hover:text-amber-500">Services</span>,
+      label: <span className="text-lg md:text-xl  font-david hover:text-amber-500">Services</span>,
       onClick: () => scrollToSection("Services"),
     },
     {
       key: "reviews",
       icon: <StarOutlined  style={{fontSize:"20px"}}/>,
-      label: <span className="text-xl font-david hover:text-amber-500">Reviews</span>,
+      label: <span className=" text-lg md:text-xl font-david hover:text-amber-500">Reviews</span>,
       onClick: () => scrollToSection("Reviews"),
     },
     {
       key: "whyus",
       icon: <InfoCircleOutlined style={{fontSize:"20px"}} />,
-      label: <span className="text-xl font-david hover:text-amber-500">Why Us</span>,
+      label: <span className="text-lg md:text-xl  font-david hover:text-amber-500">Why Us</span>,
       onClick: () => scrollToSection("WhyUs"),
     },
     {
       key: "contact",
       icon: <MailOutlined style={{fontSize:"20px"}} />,
-      label: <span className="text-xl font-david hover:text-amber-500">Contact</span>,
+      label: <span className="text-lg md:text-xl  font-david hover:text-amber-500">Contact</span>,
       onClick: () => scrollToSection("Contact"),
     },
 
@@ -55,7 +55,7 @@ const Hamburgermenu: React.FC = () => {
       key: "call",
       label: (
         <a href="tel:01793229730">
-          <button className="w-full text-xl font-david bg-orange-700 text-white py-2 rounded-md hover:hover:translate-y-2 transition">
+          <button className="w-full text-lg md:text-xl  font-david bg-orange-700 text-white py-2 rounded-md hover:hover:translate-y-2 transition">
             Call Now
           </button>
         </a>
