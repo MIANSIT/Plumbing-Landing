@@ -8,7 +8,7 @@ import { Servicedata } from "../data/Servicedata";
 export default function Services(){
     return(
 
-        <div className="flex flex-col py-10  bg-blue-50">
+        <div id="Services" className="flex flex-col py-10  bg-blue-50">
 
                 <div>
                 <h1 className="font-david py-5 lg:py-5 font-bold text-xl lg:text-3xl text-black  text-center">Services We Provide</h1>
