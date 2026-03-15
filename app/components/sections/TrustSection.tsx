@@ -6,13 +6,13 @@ import { Reviewdata } from "../data/Reviewdata";
 
 export default function TrustSection(){
     return(
-        <div  id="Reviews" className="flex flex-col items-center justify-center w-full overflow-hidden" >
+        <div  id="Reviews" className="flex flex-col items-center justify-center  bg-blue-300 w-full overflow-hidden py-10" >
 
             <div>
-                <h1 className="font-david py-5 lg:py-5 font-bold text-2xl lg:text-4xl text-black  text-center">Our Customers</h1>
+                <h1 className="font-david py-5 lg:py-5 font-bold text-2xl lg:text-4xl text-blue-900  text-center">Our Customers</h1>
             </div>
             <div className="w-full overflow-hidden">
-                 <div className=" slide-right  flex flex-row justify-items-center gap-5 ">
+                 <div className=" slide-left  flex flex-row justify-items-center gap-5 ">
                 {Reviewdata.map((info)=>(
                 <TrustCustomerReview
                         key={info.id}

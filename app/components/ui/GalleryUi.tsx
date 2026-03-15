@@ -11,11 +11,11 @@ interface ReviewProps {
 
 export default function GalleryUi({ before, after, name, review }: ReviewProps) {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center w-full  bg-gray-100 gap-3 py-6 px-3">
+    <div className="flex flex-col md:flex-row items-center justify-center w-full   bg-gray-100 gap-1 py-6 px-3">
       
      
-      <div className="flex flex-col items-center">
-        <h1 className="font-mono font-bold text-lg text-blue-500">Before</h1>
+      <div className="flex flex-col items-center ">
+        <h1 className="font-mono font-bold text-lg text-red-500">Before</h1>
        <div className="group relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-[70px_20px_70px_20px] overflow-hidden">
          <Image
            src={before}
@@ -28,7 +28,7 @@ export default function GalleryUi({ before, after, name, review }: ReviewProps) 
 
 
       <div className="flex flex-col items-center ">
-        <h1 className=" font-mono font-bold text-lg">After</h1>
+        <h1 className=" font-mono font-bold text-lg text-emerald-600">After</h1>
       
         <div className="group relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-[20px_70px_20px_70px] overflow-hidden">
           <Image

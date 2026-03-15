@@ -29,6 +29,7 @@ export default function ServiceCard({icon,heading,details,more}:Cardprops){
             </div>
             <div className=" drop-inButton text-blue-600 font-medium cursor-pointer hover:underline">
                 <Button
+                href="tel:01793229730"
                 type="primary"
                 size="large"
                 className="bg-red-400! text-white px-8 py-4">{more}</Button>

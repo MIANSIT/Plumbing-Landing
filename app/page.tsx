@@ -1,5 +1,6 @@
 
 
+import Footer from "./components/layouts/Footer";
 import Navbar from "./components/layouts/Navbar";
 import Gallery from "./components/sections/Gallery";
 import Hero from "./components/sections/Hero";
@@ -17,6 +18,7 @@ export default function Home() {
       <WhyUs/>
       <TrustSection/>
       <Gallery/>
+      <Footer/>
       
     </main>
   );
