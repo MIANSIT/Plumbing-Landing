@@ -3,9 +3,13 @@ import Image from "next/image";
 import {Button} from 'antd';
 import ServiceCard from "../ui/ServicesCard";
 import { Servicedata } from "../data/Servicedata";
+import BookanAppointment from "./BookanAppointment";
+import { useState } from "react";
 
 
 export default function Services(){
+  const [openBooking, setOpenBooking] = useState(false);
+  
     return(
 
         <div id="Services" className="flex flex-col py-10  bg-blue-50">
@@ -32,6 +36,27 @@ export default function Services(){
         
         
         </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-6">
+  
+            <Button
+              type="primary"
+              size="large"
+              href="tel:01793229730"
+              className="w-full sm:w-auto bg-red-600! hover:bg-red-900! text-white text-lg md:text-xl px-6 h-11 rounded-lg shadow-md transition">
+              Call Now
+            </Button>
+          
+            <Button
+              type="primary"
+              size="large"
+              onClick={() => setOpenBooking(true)}
+              className="w-full sm:w-auto bg-red-600! hover:bg-red-900! text-white text-lg md:text-xl px-6 h-11 rounded-lg shadow-md transition">
+              Book an Appointment
+            </Button>
+            <BookanAppointment open={openBooking} setOpen={setOpenBooking} />
+            
+
+          </div>
         </div>
 
      
