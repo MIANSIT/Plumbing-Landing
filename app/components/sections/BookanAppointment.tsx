@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { message, Select, Input, Button, Modal,Calendar } from "antd";
+import { message, Select, Input, Button, Modal, Calendar } from "antd";
 import dayjs from "dayjs";
-
-const { Option } = Select;
 
 export default function BookAnAppointment({
   open,
@@ -20,7 +18,9 @@ export default function BookAnAppointment({
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("");
-  const bookedDates=["2026-03-18","2026-03-20"]
+
+  // Dynamically tracks booked dates — grows as users confirm bookings
+  const [bookedDates, setBookedDates] = useState<string[]>([]);
 
   const services = [
     "Emergency Repairs",
@@ -57,27 +57,56 @@ export default function BookAnAppointment({
       return;
     }
 
-    const confirmbooking=window.confirm(
-        `Please Confirm Your Booking Infomration:
-          Booked Date:${date}
-          Booked Time:${time}
-          Name:${name}
-          Phone:${phone}
-          Email:${email}
-          Location:${location}`
-    );
-    
-    if(confirmbooking){
-        message.success("Booked Successfuly");
+    Modal.confirm({
+      title: "Confirm Your Booking",
+      content: (
+        <div className="space-y-1 text-sm mt-2">
+          <p>
+            <b>Date:</b> {date}
+          </p>
+          <p>
+            <b>Time:</b> {time}
+          </p>
+          <p>
+            <b>Service:</b> {service}
+          </p>
+          <p>
+            <b>Name:</b> {name}
+          </p>
+          <p>
+            <b>Phone:</b> {phone}
+          </p>
+          <p>
+            <b>Email:</b> {email}
+          </p>
+          <p>
+            <b>Location:</b> {location}
+          </p>
+        </div>
+      ),
+      okText: "Confirm Booking",
+      cancelText: "Go Back",
+      onOk() {
+        // Add the selected date to bookedDates so it gets disabled on the calendar
+        // Only add if not already in the list (avoid duplicates)
+        setBookedDates((prev) =>
+          prev.includes(date) ? prev : [...prev, date],
+        );
+
+        message.success("Booked Successfully!");
         setOpen(false);
         resetForm();
-    }
+      },
+    });
   };
 
   return (
     <Modal
       open={open}
-      onCancel={() => setOpen(false)}
+      onCancel={() => {
+        setOpen(false);
+        resetForm();
+      }}
       footer={null}
       width={850}
       centered
@@ -94,9 +123,19 @@ export default function BookAnAppointment({
               <label className="block mb-2 font-medium">Select Date</label>
               <Calendar
                 fullscreen={false}
+                disabledDate={(current) =>
+                  // Disable past dates
+                  current.isBefore(dayjs().startOf("day")) ||
+                  // Disable dates that have already been booked
+                  bookedDates.includes(current.format("YYYY-MM-DD"))
+                }
                 onSelect={(value) => setDate(value.format("YYYY-MM-DD"))}
               />
-              
+              {date && (
+                <p className="text-sm text-amber-200 mt-1">
+                  ✓ Selected Date: <span className="font-semibold">{date}</span>
+                </p>
+              )}
             </div>
 
             <iframe
@@ -113,13 +152,11 @@ export default function BookAnAppointment({
                 size="large"
                 value={time || undefined}
                 onChange={(value) => setTime(value)}
-              >
-                {timeslots.map((slot) => (
-                  <Option key={slot} value={slot}>
-                    {slot}
-                  </Option>
-                ))}
-              </Select>
+                options={timeslots.map((slot) => ({
+                  label: slot,
+                  value: slot,
+                }))}
+              />
             </div>
 
             <div>
@@ -130,13 +167,8 @@ export default function BookAnAppointment({
                 size="large"
                 value={service || undefined}
                 onChange={(value) => setService(value)}
-              >
-                {services.map((item) => (
-                  <Option key={item} value={item}>
-                    {item}
-                  </Option>
-                ))}
-              </Select>
+                options={services.map((item) => ({ label: item, value: item }))}
+              />
             </div>
           </div>
 
@@ -188,8 +220,12 @@ export default function BookAnAppointment({
         </div>
 
         <div className="mt-6 flex justify-center">
-          <Button type="primary" size="large" onClick={book}
-            className="bg-yellow-500! hover:bg-yellow-700! text-black! font-semibold! px-8! h-11! rounded-xl!">
+          <Button
+            type="primary"
+            size="large"
+            onClick={book}
+            className="bg-yellow-500! hover:bg-yellow-700! text-black! font-semibold! px-8! h-11! rounded-xl!"
+          >
             Book Now
           </Button>
         </div>
