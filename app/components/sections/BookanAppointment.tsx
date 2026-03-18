@@ -87,6 +87,7 @@ export default function BookAnAppointment({
           Book an Appointment
         </h2>
 
+
         <div className="bg-blue-900 text-amber-300 p-6 rounded-2xl w-full space-y-6">
           <div className="text-lg w-full px-2 md:px-8 space-y-4">
             <div>
@@ -97,6 +98,11 @@ export default function BookAnAppointment({
               />
               
             </div>
+
+            <iframe
+             src="https://calendar.app.google/KgNG5EXAFQMzk7TE6"
+             width={30}
+             height={30}/>
             
 
             <div>
