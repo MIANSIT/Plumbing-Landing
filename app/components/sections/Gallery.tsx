@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image";
+
 import GalleryUi from "../ui/GalleryUi";
 import { Gallerydata } from "../data/Gallerydata";
 
