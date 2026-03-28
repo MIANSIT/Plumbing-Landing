@@ -23,25 +23,25 @@ export default function Hero(){
 
 
             <div className="flex flex-wrap items-center py-4 px-6 md:px-10 gap-3">
-               <span className="rounded-full bg-blue-400 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
+               <span className="rounded-full bg-blue-200 px-4 py-2 text-md md:text-lg font-serif text-amber-800 shadow-sm">
                  Licensed
                </span>
-               <span className="rounded-full bg-blue-400 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
+               <span className="rounded-full bg-blue-200 px-4 py-2 text-md md:text-lg font-serif text-amber-800 shadow-sm">
                  Insured
                </span>
-               <span className="rounded-full bg-blue-400 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
+               <span className="rounded-full bg-blue-200 px-4 py-2 text-md md:text-lg font-serif text-amber-800 shadow-sm">
                  20+ years
                </span>
             </div>
             
             <div className="flex flex-wrap items-center py-4 px-6 md:px-10 gap-3">
-               <span className="rounded-full bg-blue-400 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
+               <span className="rounded-full bg-blue-200 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
                  Serving Fresno
                </span>
-               <span className="rounded-full bg-blue-400 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
+               <span className="rounded-full bg-blue-200 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
                  CA
                </span>
-               <span className="rounded-full bg-blue-400 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
+               <span className="rounded-full bg-blue-200 px-4 py-2 text-md md:text-lg font-serif text-blue-900 shadow-sm">
                  Badge
                </span>
             </div>

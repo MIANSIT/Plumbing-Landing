@@ -35,7 +35,7 @@ export default function Services() {
           type="primary"
           size="large"
           href="tel:01793229730"
-          className="w-full sm:w-auto bg-red-600! hover:bg-red-900! text-white text-lg md:text-xl px-6 h-11 rounded-lg shadow-md transition"
+          className="w-full sm:w-auto bg-red-600! hover:bg-red-900! text-white text-lg! md:text-xl! px-6 h-11 rounded-lg shadow-md transition"
         >
           Call Now
         </Button>
@@ -44,7 +44,7 @@ export default function Services() {
           type="primary"
           size="large"
           onClick={() => setOpenBooking(true)}
-          className="w-full sm:w-auto bg-red-600! hover:bg-red-900! text-white text-lg md:text-xl px-6 h-11 rounded-lg shadow-md transition"
+          className="w-full sm:w-auto bg-red-600! hover:bg-red-900! text-white text-lg! md:text-xl! px-6 h-11 rounded-lg shadow-md transition"
         >
           Book an Appointment
         </Button>
