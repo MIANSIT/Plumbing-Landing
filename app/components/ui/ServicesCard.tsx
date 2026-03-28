@@ -11,10 +11,9 @@ interface Cardprops{
 export default function ServiceCard({icon,heading,details,more}:Cardprops){
 
     return(
-        <div className="group relative h-64 slide-in flex flex-col items-center justify-center p-5 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2">
+        <div className="group relative h-64 slide-in flex flex-col items-center justify-center p-5 shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 rounded-[40px_40px_40px_40px]">
 
-          
-            <Image
+          <Image
                 src={icon}
                 alt="icon"
                 fill
@@ -22,7 +21,7 @@ export default function ServiceCard({icon,heading,details,more}:Cardprops){
             />
 
            
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-blue-200/80 opacity-0 transition-all duration-300 group-hover:opacity-100 text-center p-4">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-blue-200/80 opacity-0 transition-all duration-300 group-hover:opacity-100 text-center p-4 ">
                 
                 <div className="drop-inHeading text-3xl text-blue-900 font-['Inter']">
                     {heading}

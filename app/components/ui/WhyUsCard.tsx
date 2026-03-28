@@ -11,9 +11,9 @@ interface Cardprops{
 export default function WhyUsCard({icon,heading,details}:Cardprops){
 
     return(
-        <div className=" slide-in flex flex-row bg-sky-600 items-center justify-between gap-7 p-5  rounded-xl shadow-md hover:bg-blue-900 hover:-translate-y-2 transition-all duration-300 text-left ">
+        <div className=" slide-in  flex flex-row bg-sky-700 items-center justify-between gap-7 p-5   shadow-md hover:bg-blue-900 hover:-translate-y-2 transition-all duration-300 text-left  rounded-[10px_100px_100px_100px]">
 
-            <div className= "relative w-26 h-36 ">
+            <div className= "relative w-20 h-20 ">
                 <Image
                     src={icon}
                     alt="icon"
@@ -22,7 +22,7 @@ export default function WhyUsCard({icon,heading,details}:Cardprops){
                     />
             </div>
             <div className="flex flex-col">
-                <div className="text-red-200 font-bold text-xl ">
+                <div className="text-red-200 font-bold font-david text-xl ">
                    {heading}
                 </div>
             
