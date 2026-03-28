@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useState } from "react";
 import { Button } from "antd";
 import ServiceCard from "../ui/ServicesCard";
@@ -15,8 +17,16 @@ export default function Services() {
           Services We Provide
         </h1>
       </div>
+      <div className="absolute -top-1  right-5 md:right-15 lg:right-30 w-48 h-48 md:w-45 md:h:45 opacity-60">
+           <Image 
+             src="/waterDrop.png" 
+             alt="" 
+             fill 
+             className="object-contain" 
+           />
+         </div>
 
-      {/* Service cards grid */}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
         {Servicedata.map((info) => (
           <ServiceCard

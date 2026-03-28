@@ -44,8 +44,8 @@ body {
 }
 .slide-right{
   display:flex;
-   gap: 30px;
-   width:max-content;
+  gap: 30px;
+  width:max-content;
   animation:slide-right 30s linear infinite;
 }
 
@@ -58,8 +58,15 @@ body {
 
 .slide-left{
   display:flex;
-   gap: 30px;
-   width:max-content;
+  gap: 30px;
+  width:max-content;
   animation:slide-left 20s linear infinite;
 }
+/* In your globals.css or similar */
+.booking-modal .ant-modal-content {
+  padding: 0 !important;
+}
 
+.booking-modal .ant-modal-body {
+  padding: 0 !important;
+}
