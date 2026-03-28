@@ -6,7 +6,7 @@ import { Reviewdata } from "../data/Reviewdata";
 
 export default function TrustSection(){
     return(
-        <div  id="Reviews" className="flex flex-col items-center justify-center  bg-blue-300 w-full overflow-hidden py-10" >
+        <div  id="Reviews" className="flex flex-col items-center justify-center  bg-[linear-gradient(180deg,#e0f7ff_0%,#7dd3fc_50%,#38bdf8_100%)] w-full overflow-hidden py-10" >
 
             <div>
                 <h1 className="font-david py-5 lg:py-5 font-bold text-2xl lg:text-4xl text-blue-900  text-center">Our Customers</h1>
