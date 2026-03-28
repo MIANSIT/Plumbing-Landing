@@ -29,10 +29,7 @@ export default function WhyUsCard({icon,heading,details}:Cardprops){
                 <div className="text-gray-900 text-md ">
                    {details}
                 </div>
-            </div>
-             
-
-           
+            </div>   
         </div>
     );
 }
