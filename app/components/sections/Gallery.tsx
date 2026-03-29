@@ -5,7 +5,7 @@ import { Gallerydata } from "../data/Gallerydata";
 
 export default function Gallery(){
     return(
-        <div id="Gallery" className="flex flex-col bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 items-center justify-center w-full overflow-hidden relative">
+        <div id="Gallery" className="flex flex-col bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 items-center justify-center w-full overflow-hidden relative">
             
             {/* Modern animated background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -16,7 +16,7 @@ export default function Gallery(){
 
             <div className="relative z-10 w-full">
                 <div>
-                    <h1 className="font-david py-5 lg:py-5 font-bold text-xl lg:text-3xl bg-gradient-to-r from-white via-cyan-200 to-blue-200 bg-clip-text text-transparent text-center">
+                    <h1 className="font-david py-5 lg:py-5 font-bold text-3xl lg:text-4xl bg-linear-to-r from-white via-cyan-200 to-blue-200 bg-clip-text text-transparent text-center">
                         Our Previous Work
                     </h1>
                 </div>
