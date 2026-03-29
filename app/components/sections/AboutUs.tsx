@@ -51,8 +51,8 @@ export default function AboutUs() {
       <section id="About" className="relative bg-blue-950 overflow-hidden py-24">
 
         {/* Background blobs */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-blue-900/40 blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-orange-500/10 blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-150 h-150 rounded-full bg-blue-900/40 blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-100 h-100 rounded-full bg-orange-500/10 blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none" />
 
         {/* Grid texture */}
         <div
