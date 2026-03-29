@@ -9,16 +9,7 @@ export default function BookAnAppointment({
   open: boolean;
   setOpen: (value: boolean) => void;
 }) {
-  const services = [
-    "Emergency Repairs",
-    "Drain Cleaning",
-    "Water Heater Installation",
-    "Leak Detection",
-    "Bathroom Remodeling",
-    "Commercial Plumbing",
-  ];
-
-  return (
+ return (
     <Modal
       open={open}
       onCancel={() => setOpen(false)}

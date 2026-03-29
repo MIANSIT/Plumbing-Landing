@@ -5,7 +5,7 @@ import { Reviewdata } from "../data/Reviewdata";
 
 export default function TrustSection() {
   return (
-    <section id="Reviews" className="relative py-20 bg-white overflow-hidden">
+    <section id="Testimonials" className="relative py-20 bg-white overflow-hidden">
 
       {/* Top gradient accent */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-900 via-blue-600 to-orange-500" />
