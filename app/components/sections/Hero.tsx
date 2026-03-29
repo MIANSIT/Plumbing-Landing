@@ -52,8 +52,8 @@ export default function Hero() {
         />
 
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-transparent to-gray-950/90" />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/30 via-transparent to-blue-950/30" />
+        <div className="absolute inset-0 bg-linear-to-b from-blue-950/60 via-transparent to-gray-950/90" />
+        <div className="absolute inset-0 bg-linear-to-r from-blue-950/30 via-transparent to-blue-950/30" />
 
         {/* Subtle grid texture */}
         <div
@@ -83,7 +83,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
             Fast, Reliable
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-orange-600">
               Plumbing
             </span>{" "}
             Service
@@ -138,7 +138,7 @@ export default function Hero() {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="flex-1 min-w-[100px] flex flex-col items-center py-4 px-3 bg-white/5 backdrop-blur-sm"
+                className="flex-1 min-w-25 flex flex-col items-center py-4 px-3 bg-white/5 backdrop-blur-sm"
               >
                 <span className="text-2xl sm:text-3xl font-black text-white">{stat.value}</span>
                 <span className="text-xs sm:text-sm text-gray-400 font-medium mt-0.5">{stat.label}</span>
@@ -167,10 +167,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-500 z-10">
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-gray-500 to-transparent animate-pulse" />
-        </div>
+        
       </section>
 
       <BookAnAppointment open={openBooking} setOpen={setOpenBooking} />
