@@ -1,13 +1,8 @@
-"use client"
-
-import Image from "next/image";
-import ServiceCard from "../ui/ServicesCard";
-
-export const Servicedata=[
-    {id:"1",icon:"/PipeLeaking.png",heading:"Emergency Repairs",deatils:"fixing the atwe cnhf cnd cnhfid dncufh",more:"Call Now"},
-    {id:"2",icon:"/CloggedDrains.png",heading:"Drain Cleaning",deatils:"fixing the atwe cnhf cnd cnhfid dncufh",more:"Call Now"},
-    {id:"3",icon:"/WaterRun.png",heading:"Water Heater Installation",deatils:"fixing the atwe cnhf cnd cnhfid dncufh",more:"Call Now"},
-    {id:"4",icon:"/PipeLeaking.png",heading:"Leak Detection",deatils:"fixing the atwe cnhf cnd cnhfid dncufh",more:"Call Now"},
-    {id:"5",icon:"/PipeLeaking.png",heading:"Bathroom Remodeling",deatils:"fixing the atwe cnhf cnd cnhfid dncufh",more:"Call Now"},
-    {id:"6",icon:"/WaterRun.png",heading:"Commercial Plumbing",deatils:"fixing the atwe cnhf cnd cnhfid dncufh",more:"Call Now"},
+export const Servicedata = [
+    {id:"Emergency-Repairs", icon:"/PipeLeaking.png", heading:"Emergency Repairs", deatils:"Fixing emergency plumbing issues 24/7", more:"Call Now"},
+    {id:"Drain-Cleaning", icon:"/CloggedDrains.png", heading:"Drain Cleaning", deatils:"Professional drain cleaning services", more:"Call Now"},
+    {id:"Water-Heater-Installation", icon:"/WaterRun.png", heading:"Water Heater Installation", deatils:"Expert water heater installation and repair", more:"Call Now"},
+    {id:"Leak-Detection", icon:"/PipeLeaking.png", heading:"Leak Detection", deatils:"Advanced leak detection technology", more:"Call Now"},
+    {id:"Bathroom-Remodeling", icon:"/PipeLeaking.png", heading:"Bathroom Remodeling", deatils:"Complete bathroom remodeling services", more:"Call Now"},
+    {id:"Commercial-Plumbing", icon:"/WaterRun.png", heading:"Commercial Plumbing", deatils:"Commercial plumbing solutions", more:"Call Now"},
 ];
