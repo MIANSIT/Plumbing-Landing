@@ -78,7 +78,7 @@ export default function AboutUs() {
               </span>
             </h2>
 
-            <p className="text-blue-200 text-lg leading-relaxed mb-4">
+            <p className="text-blue-200 text-sm md:text-lg leading-relaxed mb-4">
               For over <span className="text-white font-bold">20 years</span>,{" "}
               <span className="text-white font-bold">Need Plumber</span> has been the go-to emergency
               plumbing service for homeowners and businesses across Fresno, CA. We built our reputation
