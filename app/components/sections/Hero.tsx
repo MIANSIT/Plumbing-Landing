@@ -107,7 +107,7 @@ export default function Hero() {
                 bg-blue-600 hover:bg-blue-500
                 text-white font-bold text-lg
                 shadow-lg shadow-blue-600/30
-                active:scale-95 transition-all duration-200
+                active:scale-95 transition-all duration-200 cursor-pointer
               "
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ export default function Hero() {
                 px-8 py-4 rounded-2xl
                 border-2 border-orange-500 hover:bg-orange-500/10
                 text-orange-400 hover:text-orange-300 font-bold text-lg
-                active:scale-95 transition-all duration-200
+                active:scale-95 transition-all duration-200 cursor-pointer
               "
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

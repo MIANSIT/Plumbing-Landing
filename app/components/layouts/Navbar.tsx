@@ -105,7 +105,7 @@ export default function Navbar() {
                   className="
                     flex items-center gap-2 px-4 py-2.5 rounded-xl
                     border-2 border-orange-500 text-orange-600 font-semibold text-sm
-                    hover:bg-orange-50 transition-all duration-200
+                    hover:bg-orange-50 transition-all duration-200 cursor-pointer
                     group
                   "
                 >
@@ -121,7 +121,7 @@ export default function Navbar() {
                     flex items-center gap-2 px-5 py-2.5 rounded-xl
                     bg-blue-900 text-white font-semibold text-sm
                     hover:bg-blue-800 active:scale-95
-                    transition-all duration-200 shadow-md shadow-blue-900/25
+                    transition-all duration-200 shadow-md shadow-blue-900/25 cursor-pointer
                   "
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -140,7 +140,7 @@ export default function Navbar() {
                 className="
                   hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-lg
                   border border-orange-400 text-orange-600 font-semibold text-sm
-                  hover:bg-orange-50 transition-colors duration-200
+                  hover:bg-orange-50 transition-colors duration-200 cursor-pointer
                 "
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -156,7 +156,7 @@ export default function Navbar() {
                 className="
                   p-2 rounded-lg text-blue-900
                   hover:bg-blue-50 transition-colors duration-200
-                  focus:outline-none focus:ring-2 focus:ring-blue-300
+                  focus:outline-none focus:ring-2 focus:ring-blue-300 cursor-pointer
                 "
               >
                 <div className="w-5 h-5 flex flex-col justify-center gap-1.5">
@@ -187,7 +187,7 @@ export default function Navbar() {
                   w-full block px-4 py-3 rounded-xl
                   text-gray-700 font-medium text-base
                   hover:bg-blue-50 hover:text-blue-900
-                  transition-colors duration-150
+                  transition-colors duration-150 cursor-pointer
                 "
               >
                 {label}
@@ -201,7 +201,7 @@ export default function Navbar() {
                 className="
                   flex flex-col items-center justify-center gap-2 px-4 py-3 rounded-xl
                   border-2 border-orange-500 text-orange-600 font-semibold text-sm
-                  hover:bg-orange-50 transition-colors duration-200
+                  hover:bg-orange-50 transition-colors duration-200 cursor-pointer
                 "
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -214,7 +214,7 @@ export default function Navbar() {
                 className="
                   flex items-center justify-center gap-2 px-4 py-3 rounded-xl
                   bg-blue-900 text-white font-semibold text-sm
-                  hover:bg-blue-800 transition-colors duration-200
+                  hover:bg-blue-800 transition-colors duration-200 cursor-pointer
                 "
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -231,7 +231,7 @@ export default function Navbar() {
                 className="
                   w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl
                   bg-blue-900 text-white font-semibold text-sm
-                  hover:bg-blue-800 transition-colors duration-200
+                  hover:bg-blue-800 transition-colors duration-200 cursor-pointer
                 "
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
