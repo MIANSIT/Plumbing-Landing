@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useState, useEffect, MouseEvent } from "react";
+import { useState, useEffect } from "react";
 import BookAnAppointment from "../sections/BookanAppointment";
 
 export default function Navbar() {
@@ -30,7 +30,7 @@ export default function Navbar() {
     { label: "About", href: "#About" },
   ];
 
-  const handleNavClick = (e: MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setMenuOpen(false);
     const target = document.querySelector(href);
