@@ -1,13 +1,14 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const nextConfig: NextConfig = {
   images: {
     loader: "custom",
     loaderFile: "./imageLoader.ts",
   },
   output: "export",
-  basePath: "/Plumbing-Landing",
-  assetPrefix: "/Plumbing-Landing",
+  ...(basePath && { basePath, assetPrefix: basePath }),
 };
 
 export default nextConfig;
