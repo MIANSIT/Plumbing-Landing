@@ -2,6 +2,10 @@ import { ServiceDetailsdata } from "../../components/data/ServiceDetailsdata";
 import ServiceDetailsCard from "../../components/ui/ServiceDetailsCard";
 import { notFound } from "next/navigation";
 
+export function generateStaticParams() {
+  return ServiceDetailsdata.map((item) => ({ id: item.id }));
+}
+
 interface PageProps {
   params: Promise<{ id: string }>;
 }
@@ -19,8 +23,8 @@ export default async function ServicePage({ params }: PageProps) {
   if (!detail) return notFound();
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-20">
-      <h1 className="text-4xl font-black text-blue-900 mb-10">{detail.id}</h1>
+    <main className='max-w-7xl mx-auto px-4 py-20'>
+      <h1 className='text-4xl font-black text-blue-900 mb-10'>{detail.id}</h1>
       <ServiceDetailsCard service={detail} />
     </main>
   );
