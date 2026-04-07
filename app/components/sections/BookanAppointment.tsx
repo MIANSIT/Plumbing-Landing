@@ -9,7 +9,7 @@ export default function BookAnAppointment({
   open: boolean;
   setOpen: (value: boolean) => void;
 }) {
- return (
+  return (
     <Modal
       open={open}
       onCancel={() => setOpen(false)}

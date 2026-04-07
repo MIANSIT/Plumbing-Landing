@@ -116,7 +116,7 @@ export default function Navbar() {
                   Call Now
                 </a>
 
-                {/* <button
+                 <button
                   onClick={() => setOpenBooking(true)}
                   className='
                     flex items-center gap-2 px-5 py-2.5 rounded-xl
@@ -139,7 +139,7 @@ export default function Navbar() {
                     />
                   </svg>
                   Book Appointment
-                </button> */}
+                </button> 
               </div>
             </div>
 
@@ -231,7 +231,7 @@ export default function Navbar() {
                 </svg>
                 Call Now
               </a>
-              {/* <button
+               <button
                 onClick={() => {
                   setOpenBooking(true);
                   setMenuOpen(false);
@@ -256,7 +256,7 @@ export default function Navbar() {
                   />
                 </svg>
                 Book Appointment
-              </button> */}
+              </button> 
             </div>
 
             {/* sm: full-width Book button */}
