@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Map Section */}
           <div className='w-full h-64 overflow-hidden rounded-xl'>
             <iframe
-              src='https://www.google.com/maps?q=Dhaka&output=embed'
+             src="https://www.google.com/maps?q=Los%20Angeles,%20USA&output=embed"
               title='Google Map showing Dhaka location'
               className='h-full w-full border-0'
               loading='lazy'
